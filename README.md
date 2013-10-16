@@ -11,7 +11,7 @@ In your Podfile, add this line:
     pod "MYSCategoryProperties"
 
 
-## Example Usage
+## Instructions
 
 Add properties to your header file:
 
@@ -36,7 +36,7 @@ Call this method in `+ (void)load` (which is called on each category of a class)
 
     + (void)load
     {
-        [MYSCategoryProperties generatePropertiesForCategoryOnClass:self];
+        [MYSCategoryProperties generateGettersSettersForCategoryOnClass:self];
     }
 
 And that's it!
@@ -52,6 +52,10 @@ You can now use the properties like normal:
 ## Contributing
 
 Please update and run the tests before submitting a pull request. Thanks.
+
+## Credit
+
+Much inspiration and code taken from https://github.com/gangverk/GVUserDefaults
 
 ## Author
 

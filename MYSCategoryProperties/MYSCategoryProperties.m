@@ -110,7 +110,7 @@ static void objectSetter(id self, SEL _cmd, id object)
 
 
 
-+ (void)generateSetterGettersForCategoryOnClass:(Class)klass
++ (void)generateGettersSettersForCategoryOnClass:(Class)klass
 {
     unsigned int count = 0;
     objc_property_t *properties = class_copyPropertyList(klass, &count);

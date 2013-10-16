@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C241B75D-CE0C-4F22-8826-17EBD3BAA968</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MYSCategoryProperties</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C4587836-C05C-4B62-A4F3-D5CCD0A9F114</key>
+		<string>https://github.com/mysterioustrousers/MYSCategoryProperties.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MYSCategoryProperties.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C4587836-C05C-4B62-A4F3-D5CCD0A9F114</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mysterioustrousers/MYSCategoryProperties.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C4587836-C05C-4B62-A4F3-D5CCD0A9F114</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C4587836-C05C-4B62-A4F3-D5CCD0A9F114</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MYSCategoryProperties</string>
+		</dict>
+	</array>
+</dict>
+</plist>
