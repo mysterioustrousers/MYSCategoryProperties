@@ -7,28 +7,63 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "NSString+Testing.h"
+
 
 @interface MYSCategoryPropertiesTests : XCTestCase
-
+@property (nonatomic, copy) NSString *testString;
 @end
+
 
 @implementation MYSCategoryPropertiesTests
 
 - (void)setUp
 {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.testString = @"This is a test";
 }
 
-- (void)tearDown
+- (void)testLongLongProperty
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
+    self.testString.mys_longLongProperty = 234233;
+    XCTAssertTrue(self.testString.mys_longLongProperty == 234233);
 }
 
-- (void)testExample
+- (void)testBoolProperty
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    self.testString.mys_boolProperty = YES;
+    XCTAssertTrue(self.testString.mys_boolProperty == YES);
+}
+
+- (void)testIntegerProperty
+{
+    self.testString.mys_integerProperty = 2342;
+    XCTAssertTrue(self.testString.mys_integerProperty == 2342);
+}
+
+- (void)testFloatProperty
+{
+    self.testString.mys_floatProperty = 232.3234;
+    XCTAssertEqualWithAccuracy(self.testString.mys_floatProperty, 232.3234, 0.001);
+}
+
+- (void)testDoubleProperty
+{
+    self.testString.mys_doubleProperty = 323423.23432;
+    XCTAssertEqualWithAccuracy(self.testString.mys_doubleProperty, 323423.23432, 0.0001);
+}
+
+- (void)testDateProperty
+{
+    NSDate *date = [NSDate date];
+    self.testString.mys_dateProperty = [date copy];
+    XCTAssertEqualObjects(date, self.testString.mys_dateProperty);
+
+}
+
+- (void)testStringProperty
+{
+    self.testString.mys_stringProperty = @"Test string";
+    XCTAssertEqualObjects(self.testString.mys_stringProperty, @"Test string");
 }
 
 @end

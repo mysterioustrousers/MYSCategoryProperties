@@ -16,6 +16,7 @@
 		C240D994180E24840089E963 /* libMYSCategoryProperties.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C240D97C180E24840089E963 /* libMYSCategoryProperties.a */; };
 		C240D99A180E24840089E963 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C240D998180E24840089E963 /* InfoPlist.strings */; };
 		C240D99C180E24840089E963 /* MYSCategoryPropertiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C240D99B180E24840089E963 /* MYSCategoryPropertiesTests.m */; };
+		C240D9A7180E2E370089E963 /* NSString+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = C240D9A6180E2E370089E963 /* NSString+Testing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		C240D997180E24840089E963 /* MYSCategoryPropertiesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MYSCategoryPropertiesTests-Info.plist"; sourceTree = "<group>"; };
 		C240D999180E24840089E963 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C240D99B180E24840089E963 /* MYSCategoryPropertiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSCategoryPropertiesTests.m; sourceTree = "<group>"; };
+		C240D9A5180E2E370089E963 /* NSString+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Testing.h"; sourceTree = "<group>"; };
+		C240D9A6180E2E370089E963 /* NSString+Testing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Testing.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 		C240D995180E24840089E963 /* MYSCategoryPropertiesTests */ = {
 			isa = PBXGroup;
 			children = (
+				C240D9A5180E2E370089E963 /* NSString+Testing.h */,
+				C240D9A6180E2E370089E963 /* NSString+Testing.m */,
 				C240D99B180E24840089E963 /* MYSCategoryPropertiesTests.m */,
 				C240D996180E24840089E963 /* Supporting Files */,
 			);
@@ -232,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C240D9A7180E2E370089E963 /* NSString+Testing.m in Sources */,
 				C240D99C180E24840089E963 /* MYSCategoryPropertiesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
