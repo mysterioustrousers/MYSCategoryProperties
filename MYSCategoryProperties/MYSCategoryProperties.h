@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface MYSCategoryProperties : NSObject
-+ (void)generateGettersSettersForCategoryOnClass:(Class)klass;
++ (void)setup:(Class)klass;
 @end
