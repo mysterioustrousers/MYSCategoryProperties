@@ -14,6 +14,7 @@
 
 enum TypeEncodings {
     Char                = 'c',
+    Bool                = 'B',
     Short               = 's',
     Int                 = 'i',
     Long                = 'l',
@@ -49,7 +50,7 @@ static void longLongSetter(id self, SEL _cmd, long long value)
     objc_setAssociatedObject(self, keyForSelector(_cmd), @(value), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-static bool boolGetter(id self, SEL _cmd)
+static BOOL boolGetter(id self, SEL _cmd)
 {
     NSNumber *number = objc_getAssociatedObject(self, keyForSelector(_cmd));
     return [number boolValue];
@@ -60,10 +61,10 @@ static void boolSetter(id self, SEL _cmd, bool value)
     objc_setAssociatedObject(self, keyForSelector(_cmd), @(value), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-static int integerGetter(id self, SEL _cmd)
+static NSInteger integerGetter(id self, SEL _cmd)
 {
     NSNumber *number = objc_getAssociatedObject(self, keyForSelector(_cmd));
-    return [number intValue];
+    return [number integerValue];
 }
 
 static void integerSetter(id self, SEL _cmd, int value)
@@ -163,6 +164,7 @@ static void objectSetter(id self, SEL _cmd, id object)
                 setterImp = (IMP)longLongSetter;
                 break;
 
+            case Bool:
             case Char:
                 getterImp = (IMP)boolGetter;
                 setterImp = (IMP)boolSetter;
