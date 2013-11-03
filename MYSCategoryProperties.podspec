@@ -1,10 +1,14 @@
 Pod::Spec.new do |s|
 
   s.name          = "MYSCategoryProperties"
-  s.version       = "0.0.2"
+  s.version       = "0.0.3"
   s.summary       = "Quickly add properties to categories using runtime associations."
   s.description   = <<-DESC
-                   Quickly add properties to categories using runtime associations. Property names **must** follow the 3 letter prefix (e.g. `mys_property`) category naming convention in order for this to work.
+                   Quickly add properties to categories using runtime associations.
+                   * Only implements getters and setters for dynamic properties.
+                   * Only implements setters for properties not marked as `readonly`.
+                   * Names getters and setters automatically unless the property declaration specifies customer getter/setter names.
+                   * It is **highly** recommended that you prefix your category methods with a 3 letter prefix (e.g. 'mys').
                    DESC
   s.homepage      = "https://github.com/mysterioustrousers/MYSCategoryProperties"
   s.license       = 'MIT'
@@ -15,4 +19,5 @@ Pod::Spec.new do |s|
   s.source_files  = 'MYSCategoryProperties/MYSCategoryProperties.{h,m}'
   s.framework     = 'Foundation'
   s.requires_arc  = true
+  s.dependency 'MYSRuntime', '~> 0.0.2'
 end

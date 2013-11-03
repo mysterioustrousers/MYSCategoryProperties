@@ -23,7 +23,7 @@
 
 + (void)load
 {
-    [MYSCategoryProperties generateGettersSettersForCategoryOnClass:self];
+    [MYSCategoryProperties setup:self];
 }
 
 @end
