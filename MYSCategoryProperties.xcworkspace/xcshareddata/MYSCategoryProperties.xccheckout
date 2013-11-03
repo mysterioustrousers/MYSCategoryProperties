@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B68ADB15-B1EB-48E1-9BC9-B74481AF833A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MYSCategoryProperties</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9639BD27-2596-4C9B-8BE6-A1652A883F21</key>
+		<string>https://github.com/mysterioustrousers/MYSRuntime.git</string>
+		<key>C4587836-C05C-4B62-A4F3-D5CCD0A9F114</key>
+		<string>https://github.com/mysterioustrousers/MYSCategoryProperties.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MYSCategoryProperties.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9639BD27-2596-4C9B-8BE6-A1652A883F21</key>
+		<string>../libs/MYSRuntime</string>
+		<key>C4587836-C05C-4B62-A4F3-D5CCD0A9F114</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mysterioustrousers/MYSCategoryProperties.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C4587836-C05C-4B62-A4F3-D5CCD0A9F114</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C4587836-C05C-4B62-A4F3-D5CCD0A9F114</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MYSCategoryProperties</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9639BD27-2596-4C9B-8BE6-A1652A883F21</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MYSRuntime</string>
+		</dict>
+	</array>
+</dict>
+</plist>

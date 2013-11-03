@@ -1,430 +1,933 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		C240D980180E24840089E963 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C240D97F180E24840089E963 /* Foundation.framework */; };
-		C240D985180E24840089E963 /* MYSCategoryProperties.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C240D984180E24840089E963 /* MYSCategoryProperties.h */; };
-		C240D987180E24840089E963 /* MYSCategoryProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C240D986180E24840089E963 /* MYSCategoryProperties.m */; };
-		C240D98E180E24840089E963 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C240D98D180E24840089E963 /* XCTest.framework */; };
-		C240D98F180E24840089E963 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C240D97F180E24840089E963 /* Foundation.framework */; };
-		C240D991180E24840089E963 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C240D990180E24840089E963 /* UIKit.framework */; };
-		C240D994180E24840089E963 /* libMYSCategoryProperties.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C240D97C180E24840089E963 /* libMYSCategoryProperties.a */; };
-		C240D99A180E24840089E963 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C240D998180E24840089E963 /* InfoPlist.strings */; };
-		C240D99C180E24840089E963 /* MYSCategoryPropertiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C240D99B180E24840089E963 /* MYSCategoryPropertiesTests.m */; };
-		C240D9A7180E2E370089E963 /* NSString+Testing.m in Sources */ = {isa = PBXBuildFile; fileRef = C240D9A6180E2E370089E963 /* NSString+Testing.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C240D992180E24840089E963 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C240D974180E24840089E963 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C240D97B180E24840089E963;
-			remoteInfo = MYSCategoryProperties;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C240D97A180E24840089E963 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				C240D985180E24840089E963 /* MYSCategoryProperties.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		C240D97C180E24840089E963 /* libMYSCategoryProperties.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMYSCategoryProperties.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C240D97F180E24840089E963 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C240D983180E24840089E963 /* MYSCategoryProperties-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MYSCategoryProperties-Prefix.pch"; sourceTree = "<group>"; };
-		C240D984180E24840089E963 /* MYSCategoryProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYSCategoryProperties.h; sourceTree = "<group>"; };
-		C240D986180E24840089E963 /* MYSCategoryProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSCategoryProperties.m; sourceTree = "<group>"; };
-		C240D98C180E24840089E963 /* MYSCategoryPropertiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYSCategoryPropertiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C240D98D180E24840089E963 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C240D990180E24840089E963 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C240D997180E24840089E963 /* MYSCategoryPropertiesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MYSCategoryPropertiesTests-Info.plist"; sourceTree = "<group>"; };
-		C240D999180E24840089E963 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C240D99B180E24840089E963 /* MYSCategoryPropertiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYSCategoryPropertiesTests.m; sourceTree = "<group>"; };
-		C240D9A5180E2E370089E963 /* NSString+Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Testing.h"; sourceTree = "<group>"; };
-		C240D9A6180E2E370089E963 /* NSString+Testing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Testing.m"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C240D979180E24840089E963 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C240D980180E24840089E963 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C240D989180E24840089E963 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C240D994180E24840089E963 /* libMYSCategoryProperties.a in Frameworks */,
-				C240D98E180E24840089E963 /* XCTest.framework in Frameworks */,
-				C240D991180E24840089E963 /* UIKit.framework in Frameworks */,
-				C240D98F180E24840089E963 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		C240D973180E24840089E963 = {
-			isa = PBXGroup;
-			children = (
-				C240D981180E24840089E963 /* MYSCategoryProperties */,
-				C240D995180E24840089E963 /* MYSCategoryPropertiesTests */,
-				C240D97E180E24840089E963 /* Frameworks */,
-				C240D97D180E24840089E963 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		C240D97D180E24840089E963 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C240D97C180E24840089E963 /* libMYSCategoryProperties.a */,
-				C240D98C180E24840089E963 /* MYSCategoryPropertiesTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C240D97E180E24840089E963 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C240D97F180E24840089E963 /* Foundation.framework */,
-				C240D98D180E24840089E963 /* XCTest.framework */,
-				C240D990180E24840089E963 /* UIKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C240D981180E24840089E963 /* MYSCategoryProperties */ = {
-			isa = PBXGroup;
-			children = (
-				C240D984180E24840089E963 /* MYSCategoryProperties.h */,
-				C240D986180E24840089E963 /* MYSCategoryProperties.m */,
-				C240D982180E24840089E963 /* Supporting Files */,
-			);
-			path = MYSCategoryProperties;
-			sourceTree = "<group>";
-		};
-		C240D982180E24840089E963 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C240D983180E24840089E963 /* MYSCategoryProperties-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C240D995180E24840089E963 /* MYSCategoryPropertiesTests */ = {
-			isa = PBXGroup;
-			children = (
-				C240D9A5180E2E370089E963 /* NSString+Testing.h */,
-				C240D9A6180E2E370089E963 /* NSString+Testing.m */,
-				C240D99B180E24840089E963 /* MYSCategoryPropertiesTests.m */,
-				C240D996180E24840089E963 /* Supporting Files */,
-			);
-			path = MYSCategoryPropertiesTests;
-			sourceTree = "<group>";
-		};
-		C240D996180E24840089E963 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C240D997180E24840089E963 /* MYSCategoryPropertiesTests-Info.plist */,
-				C240D998180E24840089E963 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		C240D97B180E24840089E963 /* MYSCategoryProperties */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C240D99F180E24840089E963 /* Build configuration list for PBXNativeTarget "MYSCategoryProperties" */;
-			buildPhases = (
-				C240D978180E24840089E963 /* Sources */,
-				C240D979180E24840089E963 /* Frameworks */,
-				C240D97A180E24840089E963 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MYSCategoryProperties;
-			productName = MYSCategoryProperties;
-			productReference = C240D97C180E24840089E963 /* libMYSCategoryProperties.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		C240D98B180E24840089E963 /* MYSCategoryPropertiesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C240D9A2180E24840089E963 /* Build configuration list for PBXNativeTarget "MYSCategoryPropertiesTests" */;
-			buildPhases = (
-				C240D988180E24840089E963 /* Sources */,
-				C240D989180E24840089E963 /* Frameworks */,
-				C240D98A180E24840089E963 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C240D993180E24840089E963 /* PBXTargetDependency */,
-			);
-			name = MYSCategoryPropertiesTests;
-			productName = MYSCategoryPropertiesTests;
-			productReference = C240D98C180E24840089E963 /* MYSCategoryPropertiesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		C240D974180E24840089E963 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Mysterious Trousers";
-			};
-			buildConfigurationList = C240D977180E24840089E963 /* Build configuration list for PBXProject "MYSCategoryProperties" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = C240D973180E24840089E963;
-			productRefGroup = C240D97D180E24840089E963 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				C240D97B180E24840089E963 /* MYSCategoryProperties */,
-				C240D98B180E24840089E963 /* MYSCategoryPropertiesTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		C240D98A180E24840089E963 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C240D99A180E24840089E963 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		C240D978180E24840089E963 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C240D987180E24840089E963 /* MYSCategoryProperties.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C240D988180E24840089E963 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C240D9A7180E2E370089E963 /* NSString+Testing.m in Sources */,
-				C240D99C180E24840089E963 /* MYSCategoryPropertiesTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C240D993180E24840089E963 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C240D97B180E24840089E963 /* MYSCategoryProperties */;
-			targetProxy = C240D992180E24840089E963 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C240D998180E24840089E963 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C240D999180E24840089E963 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		C240D99D180E24840089E963 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		C240D99E180E24840089E963 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C240D9A0180E24840089E963 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/MYSCategoryProperties.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MYSCategoryProperties/MYSCategoryProperties-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		C240D9A1180E24840089E963 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/MYSCategoryProperties.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MYSCategoryProperties/MYSCategoryProperties-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C240D9A3180E24840089E963 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MYSCategoryProperties/MYSCategoryProperties-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "MYSCategoryPropertiesTests/MYSCategoryPropertiesTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		C240D9A4180E24840089E963 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MYSCategoryProperties/MYSCategoryProperties-Prefix.pch";
-				INFOPLIST_FILE = "MYSCategoryPropertiesTests/MYSCategoryPropertiesTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		C240D977180E24840089E963 /* Build configuration list for PBXProject "MYSCategoryProperties" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C240D99D180E24840089E963 /* Debug */,
-				C240D99E180E24840089E963 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C240D99F180E24840089E963 /* Build configuration list for PBXNativeTarget "MYSCategoryProperties" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C240D9A0180E24840089E963 /* Debug */,
-				C240D9A1180E24840089E963 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		C240D9A2180E24840089E963 /* Build configuration list for PBXNativeTarget "MYSCategoryPropertiesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C240D9A3180E24840089E963 /* Debug */,
-				C240D9A4180E24840089E963 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = C240D974180E24840089E963 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1633C8F008F3479AA8156298</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DDD3F84788BD4527826441A1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>313A1F360E764946957990E0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>369DA9F6D8DE49C18832EDB8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>C240D973180E24840089E963</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C240D981180E24840089E963</string>
+				<string>C240D995180E24840089E963</string>
+				<string>C240D97E180E24840089E963</string>
+				<string>C240D97D180E24840089E963</string>
+				<string>313A1F360E764946957990E0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D974180E24840089E963</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Mysterious Trousers</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>C240D977180E24840089E963</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>C240D973180E24840089E963</string>
+			<key>productRefGroup</key>
+			<string>C240D97D180E24840089E963</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>C240D97B180E24840089E963</string>
+				<string>C240D98B180E24840089E963</string>
+			</array>
+		</dict>
+		<key>C240D977180E24840089E963</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C240D99D180E24840089E963</string>
+				<string>C240D99E180E24840089E963</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C240D978180E24840089E963</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C240D987180E24840089E963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C240D979180E24840089E963</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C240D980180E24840089E963</string>
+				<string>1633C8F008F3479AA8156298</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C240D97A180E24840089E963</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string>include/$(PRODUCT_NAME)</string>
+			<key>dstSubfolderSpec</key>
+			<string>16</string>
+			<key>files</key>
+			<array>
+				<string>C240D985180E24840089E963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C240D97B180E24840089E963</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C240D99F180E24840089E963</string>
+			<key>buildPhases</key>
+			<array>
+				<string>369DA9F6D8DE49C18832EDB8</string>
+				<string>C240D978180E24840089E963</string>
+				<string>C240D979180E24840089E963</string>
+				<string>C240D97A180E24840089E963</string>
+				<string>CFAFF31047D3463191866DF3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MYSCategoryProperties</string>
+			<key>productName</key>
+			<string>MYSCategoryProperties</string>
+			<key>productReference</key>
+			<string>C240D97C180E24840089E963</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>C240D97C180E24840089E963</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libMYSCategoryProperties.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C240D97D180E24840089E963</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C240D97C180E24840089E963</string>
+				<string>C240D98C180E24840089E963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D97E180E24840089E963</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C240D97F180E24840089E963</string>
+				<string>C240D98D180E24840089E963</string>
+				<string>C240D990180E24840089E963</string>
+				<string>DDD3F84788BD4527826441A1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D97F180E24840089E963</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>C240D980180E24840089E963</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C240D97F180E24840089E963</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C240D981180E24840089E963</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C240D984180E24840089E963</string>
+				<string>C240D986180E24840089E963</string>
+				<string>C240D982180E24840089E963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MYSCategoryProperties</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D982180E24840089E963</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C240D983180E24840089E963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D983180E24840089E963</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MYSCategoryProperties-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D984180E24840089E963</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MYSCategoryProperties.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D985180E24840089E963</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C240D984180E24840089E963</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C240D986180E24840089E963</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MYSCategoryProperties.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D987180E24840089E963</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C240D986180E24840089E963</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C240D988180E24840089E963</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C240D9A7180E2E370089E963</string>
+				<string>C240D99C180E24840089E963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C240D989180E24840089E963</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C240D994180E24840089E963</string>
+				<string>C240D98E180E24840089E963</string>
+				<string>C240D991180E24840089E963</string>
+				<string>C240D98F180E24840089E963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C240D98A180E24840089E963</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C240D99A180E24840089E963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C240D98B180E24840089E963</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C240D9A2180E24840089E963</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C240D988180E24840089E963</string>
+				<string>C240D989180E24840089E963</string>
+				<string>C240D98A180E24840089E963</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C240D993180E24840089E963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>MYSCategoryPropertiesTests</string>
+			<key>productName</key>
+			<string>MYSCategoryPropertiesTests</string>
+			<key>productReference</key>
+			<string>C240D98C180E24840089E963</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>C240D98C180E24840089E963</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>MYSCategoryPropertiesTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C240D98D180E24840089E963</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>C240D98E180E24840089E963</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C240D98D180E24840089E963</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C240D98F180E24840089E963</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C240D97F180E24840089E963</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C240D990180E24840089E963</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>C240D991180E24840089E963</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C240D990180E24840089E963</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C240D992180E24840089E963</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>C240D974180E24840089E963</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C240D97B180E24840089E963</string>
+			<key>remoteInfo</key>
+			<string>MYSCategoryProperties</string>
+		</dict>
+		<key>C240D993180E24840089E963</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>C240D97B180E24840089E963</string>
+			<key>targetProxy</key>
+			<string>C240D992180E24840089E963</string>
+		</dict>
+		<key>C240D994180E24840089E963</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C240D97C180E24840089E963</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C240D995180E24840089E963</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C240D9A5180E2E370089E963</string>
+				<string>C240D9A6180E2E370089E963</string>
+				<string>C240D99B180E24840089E963</string>
+				<string>C240D996180E24840089E963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>MYSCategoryPropertiesTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D996180E24840089E963</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C240D997180E24840089E963</string>
+				<string>C240D998180E24840089E963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D997180E24840089E963</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>MYSCategoryPropertiesTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D998180E24840089E963</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C240D999180E24840089E963</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D999180E24840089E963</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D99A180E24840089E963</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C240D998180E24840089E963</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C240D99B180E24840089E963</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MYSCategoryPropertiesTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D99C180E24840089E963</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C240D99B180E24840089E963</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C240D99D180E24840089E963</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C240D99E180E24840089E963</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C240D99F180E24840089E963</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C240D9A0180E24840089E963</string>
+				<string>C240D9A1180E24840089E963</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C240D9A0180E24840089E963</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>313A1F360E764946957990E0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>DSTROOT</key>
+				<string>/tmp/MYSCategoryProperties.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MYSCategoryProperties/MYSCategoryProperties-Prefix.pch</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C240D9A1180E24840089E963</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>313A1F360E764946957990E0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>DSTROOT</key>
+				<string>/tmp/MYSCategoryProperties.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MYSCategoryProperties/MYSCategoryProperties-Prefix.pch</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C240D9A2180E24840089E963</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C240D9A3180E24840089E963</string>
+				<string>C240D9A4180E24840089E963</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C240D9A3180E24840089E963</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MYSCategoryProperties/MYSCategoryProperties-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>MYSCategoryPropertiesTests/MYSCategoryPropertiesTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C240D9A4180E24840089E963</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>MYSCategoryProperties/MYSCategoryProperties-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>MYSCategoryPropertiesTests/MYSCategoryPropertiesTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C240D9A5180E2E370089E963</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSString+Testing.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D9A6180E2E370089E963</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSString+Testing.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C240D9A7180E2E370089E963</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C240D9A6180E2E370089E963</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CFAFF31047D3463191866DF3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>DDD3F84788BD4527826441A1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>C240D974180E24840089E963</string>
+</dict>
+</plist>

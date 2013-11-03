@@ -1,0 +1,14 @@
+PODS:
+  - MYSRuntime (0.0.1)
+
+DEPENDENCIES:
+  - MYSRuntime (from `libs/MYSRuntime`)
+
+EXTERNAL SOURCES:
+  MYSRuntime:
+    :path: libs/MYSRuntime
+
+SPEC CHECKSUMS:
+  MYSRuntime: f4b4ba3511c85d88e117288219ab799f71fdfe3d
+
+COCOAPODS: 0.27.1
