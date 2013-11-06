@@ -137,11 +137,11 @@
         }
 
         MYSMethod *getter = [[MYSMethod alloc] initWithName:property.getter implementationBlock:getterBlock];
-        BOOL worked = [mysClass addMethod:getter];
+        [mysClass addMethod:getter];
 
         if (!property.isReadOnly) {
             MYSMethod *setter = [[MYSMethod alloc] initWithName:property.setter implementationBlock:setterBlock];
-            worked = [mysClass addMethod:setter];
+            [mysClass addMethod:setter];
         }
     }
 }
