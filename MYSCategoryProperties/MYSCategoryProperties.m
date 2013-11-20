@@ -21,15 +21,15 @@
         id getterBlock = nil;
         id setterBlock = nil;
 
-        switch (property.type) {
-            case MYSTypeShort:
-            case MYSTypeLong:
-            case MYSTypeLongLong:
-            case MYSTypeUnsignedChar:
-            case MYSTypeUnsignedShort:
-            case MYSTypeUnsignedInt:
-            case MYSTypeUnsignedLong:
-            case MYSTypeUnsignedLongLong:
+        switch (property.type.type) {
+            case MYSTypeTypeShort:
+            case MYSTypeTypeLong:
+            case MYSTypeTypeLongLong:
+            case MYSTypeTypeUnsignedChar:
+            case MYSTypeTypeUnsignedShort:
+            case MYSTypeTypeUnsignedInt:
+            case MYSTypeTypeUnsignedLong:
+            case MYSTypeTypeUnsignedLongLong:
             {
                 void *key = (void *)[property.name hash];
                 getterBlock = ^long long(id self) {
@@ -43,7 +43,7 @@
             }
                 break;
 
-            case MYSTypeBool:
+            case MYSTypeTypeBool:
             {
                 void *key = (void *)[property.name hash];
                 getterBlock = ^BOOL(id self) {
@@ -56,7 +56,7 @@
                 };
             }
 
-            case MYSTypeChar:
+            case MYSTypeTypeChar:
             {
                 void *key = (void *)[property.name hash];
                 getterBlock = ^char(id self) {
@@ -70,7 +70,7 @@
             }
                 break;
 
-            case MYSTypeInt:
+            case MYSTypeTypeInt:
             {
                 void *key = (void *)[property.name hash];
                 getterBlock = ^int(id self) {
@@ -84,7 +84,7 @@
             }
                 break;
 
-            case MYSTypeFloat:
+            case MYSTypeTypeFloat:
             {
                 void *key = (void *)[property.name hash];
                 getterBlock = ^float(id self) {
@@ -98,7 +98,7 @@
             }
                 break;
 
-            case MYSTypeDouble:
+            case MYSTypeTypeDouble:
             {
                 void *key = (void *)[property.name hash];
                 getterBlock = ^double(id self) {
@@ -112,7 +112,7 @@
             }
                 break;
 
-            case MYSTypeObject:
+            case MYSTypeTypeObject:
             {
                 void *key = (void *)[property.name hash];
                 getterBlock = ^id(id self) {
