@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "MYSCategoryProperties"
-  s.version       = "0.0.3"
+  s.version       = "0.0.4"
   s.summary       = "Quickly add properties to categories using runtime associations."
   s.description   = <<-DESC
                    Quickly add properties to categories using runtime associations.
