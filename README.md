@@ -36,7 +36,7 @@ Call this method in `+ (void)load` (which is called on each category of a class)
 
     + (void)load
     {
-        [MYSCategoryProperties generateGettersSettersForCategoryOnClass:self];
+        [MYSCategoryProperties setup:self];
     }
 
 And that's it!
