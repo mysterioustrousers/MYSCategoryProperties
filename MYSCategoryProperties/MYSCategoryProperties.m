@@ -124,7 +124,12 @@
                         objc_setAssociatedObject(self, key, value, OBJC_ASSOCIATION_COPY_NONATOMIC);
                     }
                     else {
-                        objc_setAssociatedObject(self, key, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+                        if (property.storageType==MYSPropertyStorageTypeWeak||
+                            property.storageType==MYSPropertyStorageTypeAssign) {
+                            objc_setAssociatedObject(self, key, value, OBJC_ASSOCIATION_ASSIGN);
+                        }else {
+                            objc_setAssociatedObject(self, key, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+                        }
                     }
                 };
             }
